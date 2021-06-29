@@ -17,8 +17,21 @@
                             <img class="user-avatar rounded-circle" src="images/admin.jpg" alt="User Avatar">
                         </a>
                         <div class="user-menu dropdown-menu">
-                            <a class="nav-link" href="#"><i class="fa fa-power -off"></i>Logout</a>
+                            
+                            {{-- <a class="nav-link" href="{{ route('logout') }}" method="POST"><i class="fa fa-power -off"></i>Logout</a> --}}
+                            <a class="nav-link" href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                          document.getElementById('logout-form').submit();">
+                                          <i class="fa fa-power-off">
+                             {{ __('Logout') }}</i>
+                         </a>
+
+                         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                             @csrf
+                         </form>
+                        
                         </div>
+                        
                     </div>
                 </div>
             </div>

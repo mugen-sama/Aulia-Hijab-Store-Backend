@@ -8,7 +8,8 @@ use App\Http\Controllers\ProductGalleryController;
 use App\Http\Controllers\TransactionController;
 
 Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-Auth::routes(['register' => false]);
+// Auth::routes(['register' => false]);
+Auth::routes();
 
 Route::get('products/{id}/gallery', [ProductController::class, 'gallery'])
     ->name('products.gallery'); 

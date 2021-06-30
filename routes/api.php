@@ -22,7 +22,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('products/{id}', [ProductController::class, 'all'] );
+Route::get('products', [ProductController::class, 'all'] );
 Route::post('checkout', [CheckoutController::class, 'checkout'] );
 Route::get('transactions/{id}', [TransactionController::class, 'get'] );
 

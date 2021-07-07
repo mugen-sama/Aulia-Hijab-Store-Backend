@@ -48,13 +48,13 @@
                     </div> --}}
     
                     <div class="form-check">
-                        <input class="form-check-input @error('is_default') is-invalid @enderror"" type="radio" name="is_default"  value="1" checked>
+                        <input class="form-check-input @error('is_default') is-invalid @enderror" type="radio" name="is_default"  value="1" checked>
                         <label class="form-check-label" for="is_default">
                           Ya
                         </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input @error('is_default') is-invalid @enderror"" type="radio" name="is_default"  value="0">
+                        <input class="form-check-input @error('is_default') is-invalid @enderror" type="radio" name="is_default"  value="0">
                         <label class="form-check-label" for="is_default">
                           Tidak
                         </label>

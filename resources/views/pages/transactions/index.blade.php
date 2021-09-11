@@ -37,6 +37,8 @@
                                         <td>{{ $item->name }}</td>
                                         <td>{{ $item->email }}</td>
                                         <td>{{ $item->number }}</td>
+                                        {{-- <td>{{ $item->details}}</td> --}}
+
                                         <td>Rp. {{ $item->transaction_total }}</td>
                                         <td>
                                             @if ($item->transaction_status == 'PENDING')
